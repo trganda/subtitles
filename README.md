@@ -1,11 +1,6 @@
-## Subtitle Generator
+# Subtitle Generator
 
----
-title: 外语视频双语字幕生成
-date: "2025-04-17T16:49:46+08:00"
-lastmod: 2025-05-14T12:01:09+08:00
-draft: true
----
+> 该工具主要为了适配 M 系列的 Mac 进行计算加速，其他平台建议使用其他工具，例如：[VideoCaptioner](https://github.com/WEIFENG2333/VideoCaptioner)。
 
 ## 使用方法
 
