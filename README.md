@@ -4,6 +4,22 @@
 
 ## 使用方法
 
+默认使用本地 Ollama 中的模型，如果需要使用其他模型，需要修改 `src/constants/constant.py` 文件中的 `OPENAI_BASE_URL` 和 `OPENAI_API_KEY` 变量。
+
+```
+OPENAI_BASE_URL="http://192.168.100.10:11434/v1"
+OPENAI_API_KEY="ollama"
+MODEL="qwen2.5:7b"
+```
+
+配置完成后，运行以下命令进行字幕翻译
+
+```bash
+python main.py -i <input srt file> -o <output srt file> -t "简体中文"
+```
+
+## 脚本工作流程介绍
+
 用到的工具：
 
 1. [ffmpeg](https://ffmpeg.org/)
@@ -217,14 +233,6 @@ if __name__ == "__main__":
 
 > [!info]
 > 代码借鉴了 [VideoCaptioner](https://github.com/WEIFENG2333/VideoCaptioner) 。
-
-默认使用本地 Ollama 中的模型，如果需要使用其他模型，需要修改 `src/constants/constant.py` 文件中的 `OPENAI_BASE_URL` 和 `OPENAI_API_KEY` 变量。
-
-```
-OPENAI_BASE_URL="http://192.168.100.10:11434/v1"
-OPENAI_API_KEY="ollama"
-MODEL="qwen2.5:7b"
-```
 
 ### 视频合成
 
