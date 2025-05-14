@@ -1,0 +1,3 @@
+OPENAI_BASE_URL="http://192.168.100.10:11434/v1"
+OPENAI_API_KEY="ollama"
+MODEL="qwen2.5:7b"
